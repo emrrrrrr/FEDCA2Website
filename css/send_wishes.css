@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    background-color: rgb(254, 238, 227)
+}
+
+/* Navigation Bar Styles */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 15px;
+}
+
+.navbar-dark {
+    background-color: rgb(55, 57, 126);
+    /* Dark blue */
+}
+
+.sp-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f6323e;
+    /* Bright red */
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    /* Increased spacing between form elements */
+}
+
+.wrapper {
+    border-top: 3px solid green;
+}
+
+/* Countdown Timer Styles */
+.countdown-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Footer Styles */
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: #000000a8;
+}
+
+.footer1 {
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer1 .social {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer1 .social a {
+    font-size: 24px;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px 7px;
+    opacity: 0.8;
+}
+
+.footer1 .social a:hover {
+    opacity: 1;
+    /* Fully opaque on hover */
+}

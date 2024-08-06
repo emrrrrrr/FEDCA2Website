@@ -1,0 +1,184 @@
+/* General body styling */
+body {
+  background-color: rgb(254, 238, 227);
+  /* Sail color */
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  margin: 0 15px;
+}
+
+.navbar-dark {
+  background-color: rgb(55, 57, 126);
+  /* Dark blue */
+}
+
+/* SP70 logo styling */
+.sp-logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f6323e;
+  /* Bright red */
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* Hero section styling */
+.hero-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.336);
+  /* Adjust the opacity as needed */
+  z-index: 2;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 4;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Flip card styling */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: #dbdbdb;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Countdown popup styling */
+.countdown-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Title styling */
+.title {
+  color: #b40000;
+  font-size: 1.6em;
+}
+
+/* General element reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer styling */
+footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color: #000000a8;
+}
+
+.footer1 {
+  padding: 40px 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer1 .social {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer1 .social a {
+  font-size: 24px;
+  color: #ffffff;
+  border: 2px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 10px 7px;
+  opacity: 0.8;
+}
+
+.footer1 .social a:hover {
+  opacity: 1;
+}

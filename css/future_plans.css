@@ -1,0 +1,272 @@
+body {
+    background-color: rgb(254, 238, 227);
+    /* Sail color */
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 15px;
+}
+
+.navbar-dark {
+    background-color: rgb(55, 57, 126);
+    /* Dark blue */
+}
+
+.sp-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f6323e;
+    /* Bright red */
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: 7em;
+    color: rgb(55, 57, 126);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* image gallery */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.images img {
+    width: calc(33.333% - 10px);
+    border-radius: 5px;
+}
+
+/* General CSS for content type 2 */
+.content-type-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    /* ensure content doesn't exceed viewport width */
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.content-type-2-sub {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 30px;
+}
+
+/* image container within content type 2 */
+.content-type-2-image {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 25px;
+    flex: 0 0 35%;
+    /* image width */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+    .content-type-2-image {
+        background-size: auto 100%;
+        width: 20em;
+        height: 10em;
+        flex: auto;
+    }
+}
+
+/* text styles for content type 2 */
+.content-type-2-text {
+    font-family: Helvetica, Arial, sans-serif;
+    flex: 1;
+    margin: 0;
+    align-items: center;
+    font-size: 1.9em;
+    line-height: 1.5;
+    padding-left: 35px;
+    flex-direction: column;
+    color: rgb(55, 57, 126);
+}
+
+/* title styles for content type 2 */
+.content-type-2-title {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 2.4em;
+    text-align: left;
+    color: #f6323e;
+}
+
+.content-type-2-title-empty {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 25px;
+    flex: 0 0 35%;
+}
+
+/* main title for content type 2 */
+.content-type-2-title-main {
+    font-family: Helvetica, Arial, sans-serif;
+    flex: 1;
+    display: flex;
+    font-size: 1.38em;
+    line-height: 1.5;
+    padding-left: 35px;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+/* Color changing effect */
+.FP {
+    background: radial-gradient(circle, rgb(255, 53, 53), rgb(247, 0, 255));
+    background-clip: text;
+    color: transparent;
+    animation: FP 5s linear infinite;
+    background-size: 200% 200%;
+}
+
+.desc {
+    text-align: center;
+    padding-left: 20%;
+}
+
+.boxarrow {
+    background-color: #f6323e;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.arrow {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+@keyframes FP {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+
+}
+
+.hlt {
+    background-image: linear-gradient(yellow, yellow);
+    background-size: 0 100%;
+    transition: background-size 1s ease-in;
+    background-repeat: no-repeat;
+}
+
+div:hover span {
+    background-size: 100% 100%;
+}
+
+.wave {
+    padding: 5%;
+    background: url("../images/greenwavefinal.png");
+    background-repeat: repeat-x;
+    animation: flow 4s linear infinite;
+    background-size: 500px 900px;
+    border-radius: 5%;
+
+}
+
+.card-img-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-body,
+.card-img-top {
+    background-color: rgba(0, 138, 18, 0.247);
+}
+
+@keyframes flow {
+    0% {
+        background-position: -1000px 0px;
+    }
+
+    70% {
+        background-position: 0px 700px;
+    }
+
+    100% {
+        background-position: -1000px 0px;
+    }
+
+}
+
+/* Footer design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: #000000a8;
+}
+
+.footer1 {
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer1 .social {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer1 .social a {
+    font-size: 24px;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px 7px;
+    opacity: 0.8;
+}
+
+.footer1 .social a:hover {
+    opacity: 1;
+}
